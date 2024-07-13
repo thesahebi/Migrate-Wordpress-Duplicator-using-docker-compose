@@ -12,15 +12,15 @@ docker-compose up -d
 ```
 To migrate an existing WordPress site using Duplicator, follow these steps:
 
-Create a Duplicator Package:
-
-From your existing WordPress site, create a Duplicator package (installer and archive files).
-Add Duplicator Files:
-
-Place the installer.php and archive file (*.zip) into the wordpress directory.
-Run Duplicator Installer:
-
-Access the installer by navigating to http://localhost:5001/installer.php and follow the on-screen instructions to complete the migration.
+    1- Create a Duplicator Package:
+    
+    From your existing WordPress site, create a Duplicator package (installer and archive files).
+    Add Duplicator Files:
+    
+    2- Place the installer.php and archive file (*.zip) into the wordpress directory.
+    Run Duplicator Installer:
+    
+    3- Access the installer by navigating to http://localhost:5001/installer.php and follow the on-screen instructions to complete the migration.
 
 WordPress will be available at http://localhost:5001.
 
