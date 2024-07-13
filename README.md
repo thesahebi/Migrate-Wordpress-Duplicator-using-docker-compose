@@ -1,4 +1,4 @@
-# WordPress Docker Compose
+# wordpress docker compose duplicator
 
 This repository contains a Docker Compose configuration to set up an existing WordPress site using Duplicator for backup and migration.
 
