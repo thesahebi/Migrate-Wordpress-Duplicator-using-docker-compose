@@ -1,0 +1,43 @@
+version: '3.9'
+services:
+  # WordPress Service
+  wordpress:
+    hostname: wordpress
+    container_name: wordpress
+    image: wordpress:latest
+    restart: always
+    ports:
+      - 5001:80
+    volumes:
+      #- ./backup:/var/www/html  # Uncomment and customize if needed
+      - wordpress:/var/www/html
+      - ./custom-php.ini:/usr/local/etc/php/conf.d/custom-php.ini
+    depends_on:
+      - db
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+      PHP_INI_SCAN_DIR: /usr/local/etc/php/conf.d
+        
+  # MySQL Database Service
+  db:
+    hostname: db
+    container_name: db
+    image: mysql:5.7
+    restart: always
+    volumes:
+      - db_data:/var/lib/mysql
+    environment:
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
+      MYSQL_ROOT_PASSWORD: @#$sdf23232
+    ports:
+      - 3306:3306
+
+# Volume for MySQL data persistence
+volumes:
+  db_data: {}
+  wordpress: 
