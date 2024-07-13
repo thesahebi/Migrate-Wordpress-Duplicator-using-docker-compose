@@ -30,3 +30,16 @@ memory_limit = 512M
 You can modify the custom-php.ini file to suit your needs.
 
 
+Volumes
+db_data: Stores MySQL data.
+wp-data: Stores WordPress data.
+Environment Variables
+```sh
+WORDPRESS_DB_HOST: Hostname of the database.
+WORDPRESS_DB_USER: Username for the database.
+WORDPRESS_DB_PASSWORD: Password for the database.
+WORDPRESS_DB_NAME: Name of the database.
+```
+
+Create/Commit an issue ticket if you face anything during installation.
+
