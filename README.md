@@ -1,4 +1,6 @@
-# Migrate an existing WordPress site using Duplicator and docker-compose
+# Migrate an existing WordPress site using Duplicator and docker-compose in your localhost or porduction.
+
+If you've struggled with managing a WordPress website and creating a development version for ongoing development, there's a more straightforward solution using Docker Compose. This repository provides a sample setup that you can use in both production and development environments with minor adjustments to the YAML file.
 
 This repository contains a Docker Compose configuration to set up an existing WordPress site using Duplicator for backup and migration.
 
