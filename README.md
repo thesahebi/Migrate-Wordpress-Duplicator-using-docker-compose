@@ -8,7 +8,7 @@ To start the services, run:
 ```sh
 docker-compose up -d
 
-```sh
+`sh'
 WordPress will be available at http://localhost:5001.
 
 Services
