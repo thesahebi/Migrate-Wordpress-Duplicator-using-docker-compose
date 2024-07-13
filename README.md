@@ -7,6 +7,7 @@ This repository contains a Docker Compose configuration to set up a WordPress si
 To start the services, run:
 ```sh
 docker-compose up -d
+***
 
 WordPress will be available at http://localhost:5001.
 
@@ -22,5 +23,7 @@ Example of custom-php.ini:
 upload_max_filesize = 100M
 post_max_size = 100M
 memory_limit = 512M
+***
 You can modify the custom-php.ini file to suit your needs.
+
 
