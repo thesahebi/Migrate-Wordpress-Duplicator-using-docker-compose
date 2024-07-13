@@ -7,8 +7,8 @@ This repository contains a Docker Compose configuration to set up a WordPress si
 To start the services, run:
 ```sh
 docker-compose up -d
-***
 
+```sh
 WordPress will be available at http://localhost:5001.
 
 Services
